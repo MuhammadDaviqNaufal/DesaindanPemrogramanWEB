@@ -1,0 +1,7 @@
+.gambar-float {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}

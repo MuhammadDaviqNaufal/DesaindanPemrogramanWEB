@@ -1,0 +1,27 @@
+/* Sebelum Flexbox */
+.container-satu {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Aktifkan Flexbox di bawah ini */
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 2;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.sidebar-satu {
+    flex: 1;
+    background-color: #e2e2e2;
+    padding: 15px;
+}
+
+.sidebar-dua {
+    flex: 1;
+    background-color: #ccc;
+    padding: 15px;
+}

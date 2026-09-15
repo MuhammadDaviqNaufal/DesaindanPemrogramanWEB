@@ -1,0 +1,82 @@
+/* Pengaturan Umum Halaman */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    /* Penerapan Gambar & Permainan Warna Background (Soal No. 2) */
+    background: url('img/images.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #dbeafe; /* Warna cadangan jika gambar tidak dimuat */
+}
+
+/* Pembungkus Utama (Flex Container) */
+.container {
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95); /* Efek transparan halus */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    gap: 20px;
+}
+
+/* 1. Sidebar Satu (Dipaksa Tampil di Paling Kiri) */
+.sidebar-satu {
+    flex: 1;
+    order: 1; /* Posisi Pertama (Kiri) */
+    background-color: #f0fdf4;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #22c55e;
+}
+
+.sidebar-satu h3 {
+    margin-top: 0;
+    color: #15803d;
+}
+
+.sidebar-satu ul {
+    padding-left: 20px;
+}
+
+.sidebar-satu ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar-satu ul li a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* 2. Kolom Utama / Artikel (Tampil di Tengah) */
+.kolom-utama {
+    flex: 2.5;
+    order: 2; /* Posisi Kedua (Tengah) */
+    padding: 0 10px;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.kolom-utama h2 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+/* 3. Sidebar Dua (Tampil di Paling Kanan) */
+.sidebar-dua {
+    flex: 1;
+    order: 3; /* Posisi Ketiga (Kanan) */
+    background-color: #fef2f2;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ef4444;
+    font-size: 0.9em;
+    color: #475569;
+    line-height: 1.4;
+}
+
+.sidebar-dua h3 {
+    margin-top: 0;
+    color: #b91c1c;
+}
